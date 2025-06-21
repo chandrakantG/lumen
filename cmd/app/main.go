@@ -33,6 +33,6 @@ func main() {
 	if strings.ToLower(config.GetAppConfig().ENVIRONMENT) == "production" {
 		gin.SetMode(gin.ReleaseMode)
 	}
-
+	// handlers
 	handlers.InitializeRoutes()
 }
